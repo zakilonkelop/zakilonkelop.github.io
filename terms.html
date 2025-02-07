@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use - Fundacjakarta Aviation School</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/Splasher.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+                <li><a href="privacy.html" onclick="closeMenu()">Privacy Policy</a></li>
+                <li><a href="terms.html" onclick="closeMenu()">Terms of Use</a></li>
+                <li><a href="cookies.html" onclick="closeMenu()">Cookie Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="policy-container">
+        <div class="policy-content">
+            <h1>Terms of Use</h1>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing and using the Fundacjakarta Aviation School website and services, you accept and agree to be bound by these Terms of Use and all applicable laws and regulations.</p>
+
+            <h2>2. Training Services</h2>
+            <p>Our aviation training programs are provided in accordance with EASA regulations and requirements. Enrollment in our programs is subject to meeting specific eligibility criteria, including but not limited to age, language proficiency, and medical fitness.</p>
+
+            <h2>3. Payment and Refunds</h2>
+            <p>Course fees must be paid according to the payment schedule provided. Refunds are subject to our cancellation policy and may incur administrative charges.</p>
+
+            <h2>4. Student Responsibilities</h2>
+            <p>Students must:</p>
+            <ul>
+                <li>Maintain required attendance rates</li>
+                <li>Complete all assigned coursework</li>
+                <li>Follow safety procedures and instructions</li>
+                <li>Maintain valid medical certificates</li>
+                <li>Comply with aviation authority requirements</li>
+            </ul>
+
+            <h2>5. Liability</h2>
+            <p>While we maintain high safety standards, aviation training involves inherent risks. Students must acknowledge and accept these risks. We maintain appropriate insurance coverage as required by law.</p>
+
+            <h2>6. Intellectual Property</h2>
+            <p>All training materials, documentation, and content provided during the course remain the property of Fundacjakarta Aviation School and may not be reproduced without permission.</p>
+
+            <h2>7. Termination</h2>
+            <p>We reserve the right to terminate training for students who fail to meet academic requirements or violate safety procedures.</p>
+
+            <h2>8. Changes to Terms</h2>
+            <p>We may modify these terms at any time. Continued use of our services after changes constitutes acceptance of the modified terms.</p>
+
+            <h2>9. Contact Information</h2>
+            <p>For questions about these terms, please contact:</p>
+            <p>Email: legal@fundacjakarta.org</p>
+            <p>Address: Via della Aeronautica, 123, 50142 Florence, Italy</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fundacjakarta Aviation School. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navbar-menu').classList.toggle('active');
+            document.querySelector('.navbar-toggle').classList.toggle('active');
+        }
+
+        function closeMenu() {
+            document.querySelector('.navbar-menu').classList.remove('active');
+            document.querySelector('.navbar-toggle').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

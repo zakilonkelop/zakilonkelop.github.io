@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundacjakarta Aviation School - Excellence in Aviation Training</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/Splasher.png">
+    <meta name="description" content="Premier aviation school in Florence, Italy. Professional pilot training and aviation education.">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#gallery" onclick="closeMenu()">Gallery</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                <li><a href="privacy.html" onclick="closeMenu()">Privacy Policy</a></li>
+                <li><a href="terms.html" onclick="closeMenu()">Terms of Use</a></li>
+                <li><a href="cookies.html" onclick="closeMenu()">Cookie Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Fundacjakarta Aviation School</h1>
+            <p>Your journey to becoming a professional pilot starts here</p>
+            <a href="#contact" class="cta-button">Start Your Aviation Career</a>
+        </div>
+        <div class="hero-background" style="background-image: url('img/Splasher.png')"></div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Excellence in Aviation Training</h2>
+            <p>Located in the heart of Florence, Italy, Fundacjakarta Aviation School has been training professional pilots since 2010.</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Professional Training</h3>
+                    <p>EASA-certified training programs with experienced instructors</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Modern Fleet</h3>
+                    <p>Training on latest aircraft models with advanced avionics</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Career Support</h3>
+                    <p>Direct connections with major airlines and career guidance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Training Facility</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1474302770737-173ee21bab63?q=80&w=800" alt="Training Aircraft">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=800" alt="Flight Simulator">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=800" alt="Modern Classroom">
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800" alt="Students in Training">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1520437358207-323b43b50729?q=80&w=800" alt="Aircraft Cockpit">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>Via della Aeronautica, 123</p>
+                <p>50142 Florence, Italy</p>
+                <p>Email: info@fundacjakarta.org</p>
+                <p>Phone: +39 055 123 4567</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Fundacjakarta Aviation School. All rights reserved.</p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="terms.html">Terms of Use</a> |
+                <a href="cookies.html">Cookie Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navbar-menu').classList.toggle('active');
+            document.querySelector('.navbar-toggle').classList.toggle('active');
+        }
+
+        function closeMenu() {
+            document.querySelector('.navbar-menu').classList.remove('active');
+            document.querySelector('.navbar-toggle').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
